@@ -1,6 +1,14 @@
 ##
 
-## [> Link](https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=0&languages=javascript)
+## [> 프로그래머스](https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=0&languages=javascript)
+
+---
+
+## 오늘의 문제
+
+#### [머쓱이보다 키 큰 사람](https://school.programmers.co.kr/learn/courses/30/lessons/120585)
+
+#### [중복된 숫자 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120583)
 
 ---
 
@@ -14,9 +22,15 @@ root폴더에 본인의 github ID폴더를 생성한 뒤, 문제번호 폴더 �
 
 ## Commit Convention
 
+유의미한 커밋 로그를 생활화합시다!! 🥰
+
 ```
 git add .
 git commit -m "feat: {문제번호} 풀이 추가"
+git commit -m "docs: README 파일 수정"
+git commit -m "style: 폴더구조 개선"
+git commit -m "chore: 코드 오탈자 사소한 수정"
+git commit -m "fix: solution 코드 오류 수정"
 ```
 
 ---
