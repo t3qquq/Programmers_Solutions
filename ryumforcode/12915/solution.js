@@ -1,6 +1,11 @@
 //Fisrt try - denied but success only example solution
 function solution(strings, n) {
-    let answer = strings.map(a => a[n] + a).sort().map(a => a.substring(1));
+    let answer = [];
+    answer = strings.sort(function(a, b) {
+        if(a.substring(n) < b.substring(n)) { return -1; }
+        if(a.substring(n) > b.substring(n)) { return 1; }
+        return 0;
+    });
     return answer;
 }
 
