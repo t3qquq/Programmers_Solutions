@@ -1,6 +1,6 @@
 function solution(s) {
   let answer = 0;
-  const myArr = s.split(' ').reduce((prev, curr) => {
+  s.split(' ').reduce((prev, curr) => {
     if (curr === 'Z') answer -= Number(prev);
     if (curr !== 'Z') answer += Number(curr);
 
