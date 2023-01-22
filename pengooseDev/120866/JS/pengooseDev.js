@@ -8,20 +8,18 @@ function solution(board) {
 
   bombMap.forEach((_, key) => {
     const [i, j] = key;
-    if (board[i - 1]) {
-      if (j === 0) board[i - 1].splice(0, 2, 'x', 'x');
-      if (j > 0) board[i - 1].splice(j - 1, 3, 'x', 'x', 'x');
-    }
-
-    if (board[i]) {
-      if (j === 0) board[i].splice(0, 2, 'x', 'x');
-      if (j > 0) board[i].splice(j - 1, 3, 'x', 'x', 'x');
-    }
-
-    if (board[i + 1]) {
-      if (j === 0) board[i + 1].splice(0, 2, 'x', 'x');
-      if (j > 0) board[i + 1].splice(j - 1, 3, 'x', 'x', 'x');
-    }
+    if (board[i - 1])
+      j
+        ? board[i - 1].splice(j - 1, 3, 'x', 'x', 'x')
+        : board[i - 1].splice(0, 2, 'x', 'x');
+    if (board[i])
+      j
+        ? board[i].splice(j - 1, 3, 'x', 'x', 'x')
+        : board[i].splice(0, 2, 'x', 'x');
+    if (board[i + 1])
+      j
+        ? board[i + 1].splice(j - 1, 3, 'x', 'x', 'x')
+        : board[i + 1].splice(0, 2, 'x', 'x');
   });
 
   for (let i of board) for (let j of i) if (j !== 'x') answer += 1;
