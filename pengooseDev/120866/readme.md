@@ -1,3 +1,3 @@
-## 다항식 더하기
+## 안전지대
 
-### [> Link](https://school.programmers.co.kr/learn/courses/30/lessons/120863)
+### [> Link](https://school.programmers.co.kr/learn/courses/30/lessons/120866)
