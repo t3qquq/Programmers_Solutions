@@ -1,3 +1,11 @@
+/* Regex 풀이 */
+function solution(my_string) {
+  const myArr = my_string.match(/[0-9]*/g).filter((v) => v);
+  if (myArr.length === 0) return 0;
+  return myArr.map((v) => Number(v)).reduce((acc, curr) => (acc += curr));
+}
+
+/* Slide Window 탐색 풀이 */
 function solution(my_string) {
   const stringArr = my_string
     .split('')
