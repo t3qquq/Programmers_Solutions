@@ -3,7 +3,6 @@ function solution(babbling) {
 
   const res = babbling.map((word) => {
     for (let j of soundables) {
-      const wordIndex = word.indexOf(j);
       word = word.replace(j, '1');
     }
     return word;
